@@ -11,3 +11,6 @@ Tools Utilized
 * Jest
 * Node.js
 * Yarn
+
+## ASDF
+This tool is used to better maintain the version of Node and Yarn for this project. Really, it's actually used across several different projects across the developers laptop.
