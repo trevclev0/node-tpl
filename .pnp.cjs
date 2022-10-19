@@ -29,6 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["commitizen", "npm:4.2.5"],\
+            ["cz-conventional-changelog", "npm:3.3.0"],\
             ["dotenv", "npm:16.0.3"],\
             ["husky", "npm:8.0.1"],\
             ["jest", "virtual:41d88a8119855cece0261a697461610550208e908e611ddb7d80934e21c55f2e8fb95863ecc510f76298b0fb4b53c41b7d0552c9d3a87a0f4200411db293c76f#npm:29.2.1"],\
@@ -4330,6 +4331,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["node-tpl", "workspace:."],\
             ["commitizen", "npm:4.2.5"],\
+            ["cz-conventional-changelog", "npm:3.3.0"],\
             ["dotenv", "npm:16.0.3"],\
             ["husky", "npm:8.0.1"],\
             ["jest", "virtual:41d88a8119855cece0261a697461610550208e908e611ddb7d80934e21c55f2e8fb95863ecc510f76298b0fb4b53c41b7d0552c9d3a87a0f4200411db293c76f#npm:29.2.1"],\
