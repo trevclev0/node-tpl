@@ -1,4 +1,4 @@
-name: Run Unit Tests
+name: Run Unit Tests (with Coverage)
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Unit Tests - Node.js ${{ matrix.node-version }}
+    name: Test Coverage - Node.js ${{ matrix.node-version }}
 
     strategy:
       matrix:
@@ -25,7 +25,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: yarn
+        run: yarn install
 
-      - name: Run unit tests
-        run: yarn test
+      - name: Run coverage check
+        run: yarn coverage
