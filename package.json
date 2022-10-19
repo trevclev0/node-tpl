@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "packageManager": "yarn@3.2.4",
   "scripts": {
-    "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "cm": "cz",
     "coverage": "yarn test --coverage=true",
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
     "postinstall": "husky install"
   },
   "type": "module",
@@ -20,7 +21,12 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+      "prepare-commit-msg": "exec < /dev/tty && yarn cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
   }
 }
