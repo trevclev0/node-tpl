@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "packageManager": "yarn@3.2.4",
   "scripts": {
-    "cm": "cz",
-    "coverage": "yarn test --coverage=true",
+    "coverage": "yarn test --collectCoverage",
+    "coverage:watch": "yarn test --collectCoverage --watch",
     "test": "yarn node --experimental-vm-modules $(yarn bin jest)",
+    "test:watch": "yarn test --collectCoverage --watch",
     "postinstall": "husky install"
   },
   "type": "module",
