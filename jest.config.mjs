@@ -20,7 +20,7 @@ export default {
     // collectCoverage: false,
 
     // An array of glob patterns indicating a set of files for which coverage information should be collected
-    /// collectCoverageFrom: ['src/modules/*.mjs'],
+    collectCoverageFrom: ['src/*.mjs'],
 
     // The directory where Jest should output its coverage files
     // coverageDirectory: "coverage",
@@ -31,7 +31,7 @@ export default {
     // ],
 
     // Indicates which provider should be used to instrument code for coverage
-    /// coverageProvider: "v8",
+    coverageProvider: "v8",
 
     // A list of reporter names that Jest uses when writing coverage reports
     // coverageReporters: [
@@ -42,14 +42,14 @@ export default {
     // ],
 
     // An object that configures minimum threshold enforcement for coverage results
-    /// coverageThreshold: {
-    ///     "global": {
-    ///         "branches": 100,
-    ///         "functions": 100,
-    ///         "lines": 100,
-    ///         "statements": 100
-    ///     }
-    /// },
+    coverageThreshold: {
+     "global": {
+         "branches": 100,
+         "functions": 100,
+         "lines": 100,
+         "statements": 100
+     }
+    },
 
     // A path to a custom dependency extractor
     // dependencyExtractor: undefined,
