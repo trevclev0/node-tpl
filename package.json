@@ -19,11 +19,6 @@
   "dependencies": {
     "dotenv": "^16.0.3"
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && yarn cz --hook || true"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
