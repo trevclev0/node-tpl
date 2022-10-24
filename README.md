@@ -14,3 +14,6 @@ Tools Utilized
 
 ## ASDF
 This tool is used to better maintain the version of Node and Yarn for this project. Really, it's actually used across several different projects across the developers laptop.
+
+## Commitizen
+Tool used to standardize the commit messages used within GitHub. This also allows better semantic versioning.
